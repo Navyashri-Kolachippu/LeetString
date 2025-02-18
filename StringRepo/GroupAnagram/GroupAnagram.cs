@@ -11,7 +11,7 @@ namespace StringRepo.GroupAnagram
     {
         public string[] data = new string[] { "eat", "tea", "tan", "ate", "nat", "bat" };
 
-        public IList<IList<string>> Anagram()
+        public IList<IList<string>> GroupAnagramValue()
         {
             Dictionary<string, List<string>> dictData = new Dictionary<string, List<string>>();
 
@@ -32,7 +32,7 @@ namespace StringRepo.GroupAnagram
 }
 
 //GroupAnagram groupAnagram = new GroupAnagram();
-//var output = groupAnagram.Anagram();
+//var output = groupAnagram.GroupAnagramValue();
 //foreach (var item in output)
 //{
 //    foreach (var item2 in item)
