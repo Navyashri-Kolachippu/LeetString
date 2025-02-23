@@ -49,63 +49,6 @@ namespace StringRepo._678ValidParanthansis
             }
 
         }
-        public bool IsValid(string s)
-        {
-            bool flag = false;
-            Dictionary<char, int> dict = new Dictionary<char, int>();
-            int countb1 = 0, countb2 = 0, countb3 = 0;
-            foreach (char c in s)
-            {
-                if (c == '[' && !dict.ContainsKey('['))
-                {
-                    dict.Add('[', countb1++);
-                }
-                else if (c == '(' && !dict.ContainsKey('('))
-                {
-                    dict.Add('(', countb2++);
-                }
-                else if (c == '{' && !dict.ContainsKey('{'))
-                {
-                    dict.Add('{', countb3++);
-                }
-                else if (c == ']')
-                {
-                    if (countb1 != 0)
-                    {
-                        countb1--;
-                    }
-                    else if (!dict.ContainsKey('['))
-                    {
-                        return flag;
-                    }
-                }
-                else if (c == ')')
-                {
-                    if (countb2 != 0)
-                    {
-                        countb2--;
-                    }
-                    else if (!dict.ContainsKey('('))
-                    {
-                        return flag;
-                    }
-                }
-                else
-                {
-                    if (countb3 != 0)
-                    {
-                        countb3--;
-                    }
-                    else if (!dict.ContainsKey('('))
-                    {
-                        return flag;
-                    }
-                }
-            }
-
-            if (countb1 == 0 && countb2 == 0 && countb3 == 0) flag = true;
-            return flag;
-
-        }
+       
     }
 }
