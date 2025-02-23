@@ -31,6 +31,11 @@ namespace StringRepo.GroupAnagram
     }
 }
 
+//return strs
+//           .GroupBy(s => new string(s.OrderBy(c => c).ToArray()))
+//           .Select(g => g.ToList() as IList<string>)
+//           .ToList();
+
 //GroupAnagram groupAnagram = new GroupAnagram();
 //var output = groupAnagram.GroupAnagramValue();
 //foreach (var item in output)

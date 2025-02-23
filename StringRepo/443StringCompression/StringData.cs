@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StringRepo.StringCompression443;
 
 namespace StringRepo.StringCompression443
 {
@@ -42,3 +43,9 @@ namespace StringRepo.StringCompression443
 
     }
 }
+
+//StringData stringData = new StringData();
+//char[] data = new char[]
+//{ 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+//int s = stringData.Compress(data);
+//Console.WriteLine(s);
