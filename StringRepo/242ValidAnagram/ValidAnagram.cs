@@ -44,8 +44,10 @@ namespace StringRepo.ValidAnagram
             return result;
         }
     }
+}
 
 //ValidAnagram validAnagram = new ValidAnagram();
 //bool val = validAnagram.CheckValidAnagram("anagram", "nagaram");
 //Console.WriteLine(val);
-}
+//Time Complexity O(n)
+//Space Complexity O(1)

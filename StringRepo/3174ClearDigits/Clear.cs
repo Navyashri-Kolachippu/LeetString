@@ -19,7 +19,7 @@ namespace StringRepo._3174ClearDigits
                 if (char.IsDigit(s[i]))
                 {
                     count++;
-                    if (data.Length != 0)
+                    if(data.Length > 0)
                     {
                         data.Remove(data.Length - 1, 1);
                     }
@@ -40,40 +40,13 @@ namespace StringRepo._3174ClearDigits
 
         }
 
-        public int Reverse(int x)
-        {
-            StringBuilder sb = new StringBuilder();
-            bool flag = false;
-            string s = x.ToString();
-            for (int i = s.Length - 1; i >= 0; i--)
-            {
-                if (s[i] == '-')
-                {
-                    flag = true;
-                }
-                else
-                {
-                    sb.Append(s[i]);
-                }
-            }
-            if (sb[0] == 0)
-            {
-                sb.Remove(0, 1);
-            }
-
-            if (flag)
-            {
-                sb.Insert(0, "-");
-            }
-
-            int final;
-            int.TryParse(sb.ToString(), out final);
-            return final;
-        }
+//        Clear clear = new Clear();
+//        string s = "ag3";
+//        var a = clear.ClearDigits(s);
+//        Console.WriteLine(a);
+//        Time Complexity O(n)
+//        Space Complexity O(1)
+        
     }
 }
 
-//Clear clear = new Clear();
-//string s = "ag3";
-//var a = clear.ClearDigits(s);
-//Console.WriteLine(a);

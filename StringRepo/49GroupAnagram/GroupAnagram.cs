@@ -47,3 +47,5 @@ namespace StringRepo.GroupAnagram
 //    Console.WriteLine();
 //}
 //Console.ReadLine();
+//Time Complexity O(n * m log m)
+//Space Complexity O(n*m)

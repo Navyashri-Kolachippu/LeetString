@@ -49,3 +49,5 @@ namespace StringRepo.StringCompression443
 //{ 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
 //int s = stringData.Compress(data);
 //Console.WriteLine(s);
+//Time Complexity O(n)
+//Space Complexity O(1)

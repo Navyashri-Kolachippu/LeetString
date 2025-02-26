@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StringRepo._678ValidParanthansis;
 
 namespace StringRepo._678ValidParanthansis
 {
     public class Valid
     {
-        public bool CheckValidString(string s)
+        public bool CheckValidParanthesis(string s)
         {
             bool flag = false;
 
@@ -49,6 +50,13 @@ namespace StringRepo._678ValidParanthansis
             }
 
         }
-       
+
     }
 }
+
+//Valid val = new Valid();
+//var s = val.CheckValidParanthesis("(*)");
+//Console.WriteLine(s);
+
+//Time Complexity O(n)
+//Space Complexity O(1)
